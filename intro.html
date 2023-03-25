@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav sutar web developer programmer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+
+</head>
+<body>
+   <div class="container">
+  
+    <div class = "sidebar sidebargo">
+        Vaibhav
+     <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="intro.html">My Intro</a></li>
+      
+        <li><a href="Resume.docx">cv</a></li>
+      </ul>
+     </nav>
+    </div>
+    <div class = "main">
+      <div class="hamberger">
+        <img class="ham" src="ham.png" alt="" width="28px">
+        <img class="cross" src="cross.png" alt="" width="28px">
+    </div>
+     
+        <div class="info">
+               <h1>About me</h1>
+               <p>Hi, I'm vaibhav sutar from Solapur,India.
+                I am Studying in Second year at walchand institute of technology,Solapur.
+                Now-a-Days I am learning programming languages at verified Intellise It Institute which is placed in solapur itself.
+                I have got certified in C Programming Language.
+                I am working on some projects like Self Portfolio,etc.</p>
+               <h2>my skills</h2>
+                 
+                  <div class="w3-container">
+                  
+                   
+                   <div class="w3-light-grey">
+                     <div id="myBar" class="w3-container w3-grey w3-center" style="border-radius: 20px;" style="border-color: rgb(179, 237, 219);" >20%</div>
+                   
+                   <br>
+                  </div>
+                   <button class="w3-button w3-black" onclick="move()">C programming</button> 
+                   <script>
+                    function move() {
+                      var elem = document.getElementById("myBar");   
+                      var width = 0;
+                      var id = setInterval(frame, 10);
+                      function frame() {
+                        if (width >= 90) {
+                          clearInterval(id);
+                        } else {
+                          width++; 
+                          elem.style.width = width + '%'; 
+                          elem.innerHTML = width * 1  + '%';
+                        }
+                      }
+                    }
+                    </script>
+                   
+               
+                    
+                    <button class="w3-button w3-black" onclick="move1()">web devlopement</button> 
+                  <script>
+                  function move1() {
+                    var elem = document.getElementById("myBar");   
+                    var width = 0;
+                    var id = setInterval(frame, 10);
+                    function frame() {
+                      if (width >= 93) {
+                        clearInterval(id);
+                      } else {
+                        width++; 
+                        elem.style.width = width + '%'; 
+                        elem.innerHTML = width * 1  + '%';
+                      }
+                    }
+                  }
+                  </script>
+                  
+                    
+                  
+               
+         </div>
+         
+     </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
